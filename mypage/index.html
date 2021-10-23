@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/base.css">  
+    <link rel="stylesheet" href="../css/base.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Account</title>
 </head>
@@ -14,7 +16,7 @@
     <div class="mypageWrap">
         <aside class="mypageCateArea">
             <div class="lnbTop">
-                <a id="_cate_main" class="on" href="/mypage/index.html">Information management</a>
+                <a id="_cate_main" class="on" href="#">Information management</a>
                 <a id="_cate_order" href="/mypage/myorder.html">Order Management </a>
                 <a id="_cate_favorite" href="/mypage/myaddress">Manage favorite products </a>
                 <a id="_cate_sign_out" href="/mypage/mypoint">Sign out</a>
@@ -72,9 +74,12 @@
             <hr size="1px" color="#000">
             <div class="section02" >
                 <h1>Information of your order</h1>
-                <div class="orderStatus" style="background-color: #F9F9F9;">
-                    <h2 style="display: inline;">Order Status</h2>
-                    <div class="radioCheck" style="display: inline; margin-right: 0;">
+                <div class="row orderStatus" style="background-color: #F9F9F9;">
+                    <div class="col-25">
+                        <br>
+                        <h2 style="display: inline;">Order Status</h2>
+                    </div>
+                    <div class="col-75 radioCheck" style="display: inline; margin-right: 0;">
                         <label class="radio">
                             <input type="radio" name="r" value="1" checked>
                             <span>All single orders</span>
@@ -184,7 +189,7 @@
                                     </h4></div>
                                     
                                     <div class="product-review">
-                                        <img src="./assests/img/Star.png" alt="" class="product-review-img">
+                                        <img src="../img/Star.png" alt="" class="product-review-img">
                                         <span class="product-review-number">132 Reviews</span>
                                     </div>
                                     <p class="product-price">$54.00</p>
