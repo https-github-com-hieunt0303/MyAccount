@@ -1,25 +1,24 @@
 /* My account */
-.mypageWrap:after {
-  content:'';
-  display:block;
-  clear:both;
+.mypageCateArea .lnbTop {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
-.mypageWrap .mypageCateArea {
-  float:left;
-  margin-top:15px;
+
+div.mypageArea {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
-.mypageWrap .mypageArea {
-  float:right;
-}
-.mypageArea{
-  padding-right: 20px;
-}
-.mypageCateArea{
-  padding-left: 20px;
-}
+
 .mypageCateArea .lnbTop a {
   display: block;
   border-bottom: 1px solid #ccc;
+  padding: 16px;
+  text-decoration: none;
 }
 .mypageCateArea .lnbTop a.on {
   border-bottom: 2px solid #024137;
@@ -197,12 +196,8 @@
   color: #000000;
   text-align: center;
 }
-.btn_del{
-  position: absolute;
-  bottom: 15%; right: 0;
-  background-color: #fff;
-  border-color: #fff;
-  color: #336E51;
+.fa .fa-trash{
+  vertical-align: right;
 }
 /* Cart items */
 .row1 .col1 li .li .quantity p{
@@ -235,7 +230,7 @@
   height: 100%;
 }
 .product{
-text-align: left;
+  text-align: left;
 }
 .col1 {
   text-align: left;
@@ -274,6 +269,10 @@ text-align: left;
   right: 0;
 }
   
+.object{
+  text-align: right;
+}
+
 .round label {
   background-color: #fff;
   border: 1px solid #66bb6a;
@@ -396,5 +395,22 @@ input[type=submit]:hover {
 	.mypageWrap {width:100%;min-width:1000px;}
 	.mypageCateArea .lnbTop a {
     font-size:12px;line-height:38px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mypageCateArea .lnbTop {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .mypageCateArea .lnbTop a {float: left;}
+  div.mypageArea {margin-left: 0;}
+}
+
+@media screen and (max-width: 500px) {
+  .mypageCateArea .lnbTop a {
+    text-align: center;
+    float: none;
   }
 }
