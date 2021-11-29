@@ -1,18 +1,119 @@
 /* My account */
-.mypageCateArea .lnbTop {
+.purchase-header{
+  width: 100%;
+}
+.purchase__heading{
+  font-size: 3.4rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 48px 0 16px;
+  text-align: center;
+  color: var(--primary-color);
+}
+/* Purchase menu */
+.purchase-menu{
+
+}
+.purchase-menu__list{
+    list-style: none;
+    padding: 12px 0;
+    margin: 0;
+}
+.purchase-menu__link{
+    text-decoration: none;
+}
+.purchase-menu__item{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding: 16px 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--line-color);
+}
+.purchase-menu__item:hover{
+    font-weight: 400;
+}
+.purchase-menu__icon{
+    width: 30px;
+    float: right;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+.purchase-info__heading{
   margin: 0;
-  padding: 0;
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: var(--bl);
+}
+.section01{
+  margin-top: 24px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line-color);
+}
+.section03,
+.section02{
+  padding: 32px 0 48px;
+  border-bottom: 1px solid var(--line-color);
+}
+/* .orderStatus{
+  display: flex;
+  align-items: center;
+} */
+table{
+  width: 100%;
+  margin-top: 32px;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+}
+th{
+  font-size: 1.4em;
+  line-height: 1.4rem;
+  font-weight: 400;
+  padding: 12px 0;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+td{
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 16px 0;
+  color: var(--text-color);
+  border: 1px solid var(--line-color);
+  background-color: var(--white-color);
+}
+.section02__header{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderStatus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 28px 0 0;
+  color: var(--text-color);
+  position: relative;
+}
+.orderStatus span{
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-right: 16px;
+}
+.orderStatus i{
+  font-size: 1.2rem;
+}
+.products-container{
+  margin-top: 30px;
 }
 
-div.mypageArea {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
+
 
 .mypageCateArea .lnbTop a {
   display: block;
@@ -47,36 +148,37 @@ div.mypageArea {
 }
   /* Section 02 */
 #orders {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 100%; */
 }
   
-#orders td, #orders th {
+/* #orders td, #orders th {
   border: 1px solid #ddd;
   padding: 8px;
-}
-  
+} */
+/*   
 #orders th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
   background-color: #336E51;
   color: white;
-}
-#orders td{
+} */
+/* #orders td{
   text-align: center;
-}
-.orderItems{
+} */
+/* .orderItems{
   height: 120px;
-}
+} */
   /* Section 02 */
   /* Section 03 */
 .product-name-box h4{
     font-family: 'Roboto', sans-serif;
 }
 .products-container-row{
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .products-container-item{
   display: flex;
@@ -111,7 +213,7 @@ div.mypageArea {
   margin: 16px 0 8px 0;
 }
 .product-name{
-  /* font-size: 1.4rem; */
+  font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
   margin: 16px 0;
@@ -144,7 +246,7 @@ div.mypageArea {
   text-align: center;
   color: var(--sub-text-color);
 }
-.products-container-row {
+/* .products-container-row {
   --gap: 16px;
   --num-cols: 3;
   
@@ -154,16 +256,16 @@ div.mypageArea {
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
   gap: var(--gap);
-}
+} */
 
-.products-container-row > .grid-col-7-3 {
+/* .products-container-row > .grid-col-7-3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .grid-col-7-3 {
   grid-column: span 1;
-}
+} */
   
 @media screen and (max-width: 1000px) {
   .products-container-row {
@@ -220,10 +322,10 @@ div.mypageArea {
 .col1 .price{
   color: #336E51;
 }
-.itemInfo h2{
+/* .itemInfo h2{
   font-size: 16px;
   color: #000000;
-}
+} */
 .itemList{
   width: 100%;
   height: 100%;
@@ -320,13 +422,23 @@ div.mypageArea {
 }
 input[type=text], input[type=password], select, textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #336E51;
-  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding: 12px 16px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
   resize: vertical;
 }
 
+form{
+  margin-top: 12px;
+}
 label {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--sub-text-color);
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
@@ -340,38 +452,43 @@ label {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 16px;
 }
 
 .col-75 {
   padding-left: 30px;
   float: right;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 16px;
 }
 
 input[type=submit] {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  outline: none;
   color: #FFF;
   border-radius: 50px;
-  padding: 18px 36px;
+  padding: 12px 16px;
   display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 500;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #FFF;
+  /* box-shadow: inset 0 0 0 0 #FFF;
   -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  background-color: #336E51;
+  -moz-transition: ease-out 0.4s; */
+  /* transition: ease-out 0.4s; */
+  background-color: var(--primary-color);
   cursor: pointer;
 }
-input[type=submit]:hover {
-  border: 2px solid rgb(51, 109, 81);
-  color: #336E51;
-  box-shadow: inset 400px 0 0 0 #FFF;
+/* input[type=submit]:hover {
+  color: var(--primary-color);
+  box-shadow: inset 734px 0 0 0 #FFF;
+} */
+input[type=submit]:hover{
+  background-color: rgba(51, 109, 81, 0.9);
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
