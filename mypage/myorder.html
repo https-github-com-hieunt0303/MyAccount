@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <p style="font-family: Montserrat; font-size: 24px; color: #336E51;">Shopping Cart</p>  
+        <p style="font-family: Montserrat; font-size: 2.5em; color: #336E51;">Shopping Cart</p>  
         <!-- Cart Items Layout -->
         <div class="row1" >
             <div class="col1 products">
@@ -120,13 +120,33 @@
                           <input type="text" id="address" name="address" placeholder="Your address..">
                         </div>
                       </div>
+                      <br>
                     <div class="row">
-                      <div class="col-25">
-                        <select id="method" name="method" style="font-size: 10px;">
-                            <option value="defaultMethod">Payment Methods</option>
-                        </select>                        
+                      <div class="col-25" style="width: 100%; margin-top: 0;">
+                        <div class="home__category-item">
+                            <span class="home__category-name">
+                                Payment Methods
+                            </span>
+                            <i class="home__category-icon fas fa-chevron-down"></i>
+                            <nav class="home__category-menu">
+                                <ul class="home__category-list">
+                                    <li class="home__category-list-item">
+                                        <a href="">COD</a>
+                                    </li>
+                                    <li class="home__category-list-item">
+                                        <a href="">Bank Card</a>
+                                    </li>
+                                    <li class="home__category-list-item">
+                                        <a href="">Electronic Wallet</a>
+                                    </li>
+                                    <li class="home__category-list-item">
+                                        <a href="">Visa</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>                      
                       </div>
-                      <div class="col-75">
+                      <div class="col-75" style="text-align: center; width: 100%; margin-top: 0;">
                         <label for="COD">Payment on delivery (COD).</label>
                       </div>
                     </div>
